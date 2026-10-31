@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap');
+
+:root {
+    --cor-principal: #16324f;
+    --cor-secundaria: #286f9b;
+    --cor-destaque: #d9eaf4;
+    --cor-fundo: #f4f7fa;
+    --cor-texto: #263746;
+    --cor-branco: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--cor-principal);
+    color: var(--cor-branco);
+    text-align: center;
+    padding: 25px 20px;
+}
+
+#titulo-curso {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: var(--cor-branco);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--cor-secundaria);
+}
+
+main {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-principal);
+    margin-bottom: 10px;
+}
+
+.card {
+    background-color: var(--cor-branco);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-secundaria);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+    object-position: center 30%;
+}
+
+.card p {
+    text-align: justify;
+}
+
+footer {
+    background-color: var(--cor-principal);
+    color: var(--cor-branco);
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+@media screen and (max-width: 650px) {
+    main {
+        grid-template-columns: 1fr;
+        margin: 15px auto;
+    }
+
+    #titulo-curso {
+        font-size: 1.3rem;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
