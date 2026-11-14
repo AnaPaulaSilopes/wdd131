@@ -1,0 +1,148 @@
+/* WDD 131 - S03 Página do País */
+:root {
+  --green: #087443;
+  --dark-green: #064b32;
+  --yellow: #f7d547;
+  --blue: #087ca7;
+  --light-blue: #eaf6fa;
+  --text: #202b2b;
+  --white: #ffffff;
+  --shadow: 0 3px 14px rgba(0, 0, 0, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: #f4f8f5;
+}
+
+.site-header {
+  background: var(--green);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 7px solid var(--yellow);
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.hero {
+  width: 100%;
+  background: var(--light-blue);
+}
+
+.hero picture,
+.hero img {
+  display: block;
+  width: 100%;
+}
+
+.hero img {
+  height: 330px;
+  object-fit: cover;
+}
+
+.content-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  width: min(92%, 1100px);
+  margin: 1.5rem auto;
+}
+
+.data-card,
+.weather-card,
+.about {
+  background: var(--white);
+  padding: 1.25rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+h2 {
+  color: var(--dark-green);
+  margin-top: 0;
+  border-bottom: 3px solid var(--yellow);
+  padding-bottom: 0.45rem;
+}
+
+.data-content p,
+.weather-content p {
+  margin: 0.55rem 0;
+}
+
+.weather-icon {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.weather-icon img {
+  width: 74px;
+  height: 74px;
+}
+
+.about {
+  width: min(92%, 1100px);
+  margin: 1.5rem auto;
+}
+
+.site-footer {
+  background: var(--dark-green);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  border-top: 6px solid var(--yellow);
+  font-size: 0.9rem;
+}
+
+.site-footer p {
+  margin: 0.3rem;
+}
+
+/* Layout para telas maiores */
+@media screen and (min-width: 700px) {
+  .site-header h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero img {
+    height: 480px;
+  }
+
+  .content-layout {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    margin-top: -3rem;
+    position: relative;
+  }
+
+  .data-card,
+  .weather-card {
+    min-height: 280px;
+    background: rgba(255, 255, 255, 0.96);
+  }
+
+  .weather-icon {
+    display: none;
+  }
+
+  .weather-card h2::after {
+    content: " ⛅";
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+  }
+
+  .about {
+    margin-top: 1rem;
+    padding: 1.6rem 2rem;
+  }
+}

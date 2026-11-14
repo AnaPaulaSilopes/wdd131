@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="title">
+  <title id="title">Sol entre nuvens</title>
+  <circle cx="62" cy="35" r="20" fill="#f7d547"/>
+  <g fill="#d9eff7" stroke="#087ca7" stroke-width="3">
+    <path d="M24 72a17 17 0 0 1 1-34 24 24 0 0 1 45 5 15 15 0 1 1 5 29H24z"/>
+  </g>
+</svg>

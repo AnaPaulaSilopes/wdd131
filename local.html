@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça Alagoas, um dos destinos mais encantadores do Brasil, com praias, cultura e belezas naturais.">
+  <meta name="author" content="Ana Paula da Silva Lopes">
+  <title>Alagoas, Brasil | WDD 131</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="estilos/local.css">
+  <script src="scripts/local.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Alagoas, Brasil</h1>
+  </header>
+
+  <main>
+    <div class="hero">
+      <picture>
+        <source media="(max-width: 600px)"
+          srcset="https://images.unsplash.com/photo-1729618283587-218470893666?auto=format&fit=crop&w=900&q=80&fm=webp">
+        <img
+          src="https://images.unsplash.com/photo-1711805492345-403ca3e43dd1?auto=format&fit=crop&w=1800&q=85&fm=webp"
+          alt="Vista aérea do mar azul e da faixa de areia em Maragogi, Alagoas"
+          fetchpriority="high">
+      </picture>
+    </div>
+
+    <div class="content-layout">
+      <section class="data-card" aria-labelledby="dados-title">
+        <h2 id="dados-title">Dados</h2>
+        <div class="data-content">
+          <p><strong>País:</strong> Brasil</p>
+          <p><strong>Estado:</strong> Alagoas</p>
+          <p><strong>Capital:</strong> Maceió</p>
+          <p><strong>Região:</strong> Nordeste</p>
+          <p><strong>Idioma:</strong> Português</p>
+          <p><strong>Moeda:</strong> Real (R$)</p>
+          <p><strong>Conhecido por:</strong> Praias, piscinas naturais e cultura nordestina</p>
+        </div>
+      </section>
+
+      <section class="weather-card" aria-labelledby="weather-title">
+        <h2 id="weather-title">Clima</h2>
+        <div class="weather-icon">
+          <img src="imagens/clima.svg" alt="Ícone de sol entre nuvens">
+        </div>
+        <div class="weather-content">
+          <p><strong>Temperatura:</strong> <span id="temperature">29</span> °C</p>
+          <p><strong>Condição:</strong> Parcialmente nublado</p>
+          <p><strong>Velocidade do vento:</strong> <span id="wind">14</span> km/h</p>
+          <p><strong>Sensação térmica:</strong> <span id="wind-chill">N/A</span></p>
+        </div>
+      </section>
+    </div>
+
+    <section class="about">
+      <h2>Sobre Alagoas</h2>
+      <p>
+        Alagoas está localizado na região Nordeste do Brasil e encanta por suas
+        águas em tons de azul e verde, coqueirais e piscinas naturais. Sua capital,
+        Maceió, reúne belas praias urbanas, gastronomia regional e manifestações
+        culturais que representam a riqueza do povo alagoano.
+      </p>
+      <p>
+        Entre os destinos mais conhecidos está Maragogi, famosa por suas piscinas
+        naturais formadas entre os recifes de corais. O estado também possui
+        comunidades acolhedoras, artesanato, música e pratos tradicionais como
+        sururu, tapioca e bolo de goma.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year"></span> | Ana Paula da Silva Lopes | Alagoas, Brasil</p>
+    <p>Última modificação: <span id="last-modified"></span></p>
+  </footer>
+</body>
+</html>
