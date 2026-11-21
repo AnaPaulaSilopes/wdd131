@@ -1,0 +1,12 @@
+/* Estilos para telas maiores */
+@media screen and (min-width: 700px) {
+  header { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 3rem; }
+  header h2 { margin-bottom: 0; }
+  #menu-button { display: none; }
+  nav { display: flex; flex-direction: row; align-items: center; gap: .35rem; margin-top: 0; }
+  nav a { padding: .7rem .9rem; }
+  .gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+  main { padding: 3rem 2rem; }
+  h1 { font-size: 2.5rem; }
+  .temple-card img { height: 200px; }
+}
